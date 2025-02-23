@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-attachment: fixed;
+    background-size: cover;
+    background: #f7f6f6;
+    background-repeat: no-repeat;
+   
+}
+
+ fieldset{
+  
+  
+   margin-top: 20px;
+   
+ }
+
+ h3{
+     font-size: 30px;
+
+ }
+ u{
+     font-size: 20px;
+ }
+ select{
+     margin: 16px;
+     padding: 12px;
+     width: 200px;
+     position: relative;
+ }
+ input{
+    padding: 12px;
+    width: 200px;
+ }
+ a{
+     color: black;
+ }
+
+ 
+
+
+

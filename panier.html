@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Site avec un Panier</title>
+    <style>
+        /* Styles CSS pour le panier */
+        #cart {
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: #f9f9f9;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+        }
+        
+        #cart ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        #cart li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mon Site avec un Panier</h1>
+    </header>
+
+    <main>
+        <!-- Contenu du site -->
+        <p>Ajoutez des articles à votre panier :</p>
+        <button onclick="addToCart('Product 1', 10.99)">Ajouter Produit 1</button>
+        <button onclick="addToCart('Product 2', 15.99)">Ajouter Produit 2</button>
+        <button onclick="addToCart('Product 3', 20.49)">Ajouter Produit 3</button>
+    </main>
+
+    <!-- Espace panier -->
+    <div id="cart">
+        <h2>Panier</h2>
+        <ul id="cart-items">
+            <!-- Articles ajoutés seront affichés ici -->
+        </ul>
+        <p>Total: <span id="cart-total">0.00</span>€</p>
+    </div>
+
+    <script>
+        // Fonction pour ajouter un article au panier
+        function addToCart(productName, price) {
+            var cartItems = document.getElementById('cart-items');
+            var cartTotal = document.getElementById('cart-total');
+
+            var listItem = document.createElement('li');
+            listItem.textContent = productName + ' - ' + price.toFixed(2) + '€';
+            cartItems.appendChild(listItem);
+
+            // Mettre à jour le total
+            var currentTotal = parseFloat(cartTotal.textContent);
+            currentTotal += price;
+            cartTotal.textContent = currentTotal.toFixed(2);
+        }
+    </script>
+</body>
+</html>
+
+

@@ -1,0 +1,86 @@
+:root{
+    --bg-color: #ffffff;
+    --text-color: #121212;
+    --main-font: 2.2rem;
+    --p-font: 1.1rem;
+}
+body{
+    background: #f7f6f6;
+    color: var(--text-color);
+}
+	
+
+
+
+
+section{
+    padding: 20px 1%;
+    
+   
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, auto));
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 4rem;
+    padding: 20px 12%;
+    margin: -10px ;
+  
+}
+.box{
+    padding: 20px 10px 20px 10px;
+    background: white;
+    box-shadow: 5px 30px 56.1276px rgb(55 55 55 / 12%);
+    border-radius: 1px;
+    position: relative;
+    transition: all 0.35s ease;
+    height: 240px;
+    width: 220px;
+    margin: -5px;
+    
+  
+}
+
+.box0{
+    padding: 20px 10px 20px 10px;
+    background: white;
+    box-shadow: 5px 30px 56.1276px rgb(55 55 55 / 12%);
+    border-radius: 1px;
+    position: relative;
+    transition: all 0.35s ease;
+    height: 180px;
+    width: 230px;
+    margin: -5px;
+    
+  
+}
+
+.box h4{
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+.box h5{
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.box:hover{
+    transform: translateY(-5px);
+}
+a{
+    
+    color: black;
+}
+
+
+
+
+
+
+
+
+

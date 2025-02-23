@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #f7f6f6;
+}
+ .para{
+    margin-top: 50px;
+   text-align: left;
+   color: black;
+}

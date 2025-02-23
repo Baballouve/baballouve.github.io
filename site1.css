@@ -1,0 +1,146 @@
+
+
+:root{
+    --bg-color: #ffffff;
+    --text-color: #121212;
+    --main-font: 2.2rem;
+    --p-font: 1.1rem;
+}
+
+.cell{
+    
+    margin: 1px 0;
+    overflow: hidden;
+    border-radius: 1px;
+    text-align: center;
+   padding: 10px;
+   
+}
+
+.cells{
+    
+    margin: 1px 0;
+    overflow: hidden;
+    border-radius: 1px;
+    text-align: center;
+   padding: 10px;
+  
+   
+}
+
+.vell{
+    margin-top:40px;
+}
+
+.about{
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.about-content{
+    text-align: center;
+}
+ .about-content h2{
+     font-size: var(--main-font);
+     margin-bottom: 30px;
+ }
+ .about-content p{
+     max-width: 600px;
+     font-size: var(--p-font);
+     font-weight: 600;
+     color: var(--text-color);
+     line-height: 30px;
+ }
+
+ .contact{
+     padding: 80px 12%;
+     background:#a89331;
+ }
+
+ .main-contact{
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+     gap: 2rem;
+     margin-bottom: 3rem;
+ }
+
+ .contact-content li{
+     margin-bottom: 15px;
+     list-style: none;
+ }
+ .contact-content li a{
+     display: block;
+     color: var(--bg-color);
+     font-size: var(--p-font);
+     text-decoration: none;
+     font-weight: 600;
+     transition: all 0.40s ease;
+ }
+ .contact-content li a:hover{
+     transform: translateX(10px);
+ }
+ .action form{
+     text-align: center;
+ }
+ .action form input[type="email"]{
+     width: 460px;
+     max-width: 100%;
+     padding: 12px 15px;
+     background: #515151;
+     color: var(--bg-color);
+     border: none;
+     outline: none;
+     margin: 0px 10px 20px 0px;
+     font-size: 16px;
+     font-weight: 600;
+ }
+ .action form input[type="submit"]{
+    padding: 10px 35px;
+    background: var(--bg-color);
+    color: #141d28;
+    border: none;
+    outline: none;
+    margin: 0px 10px 20px 0px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.last{
+    text-align: center;
+    padding: 17px;
+    background: #757575;
+}
+.last p{
+    color: var(--text-color);
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+
+@media screen and (max-width:1078px) {
+    .about-content p{
+        max-width: 600px;
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--text-color);
+        line-height: 30px;
+    }
+
+    .about-content h2{
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        font-weight: 500;
+    }
+
+    .contact-content li a{
+        display: block;
+        color: var(--bg-color);
+        font-size: 0.8rem;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.40s ease;
+    }
+}
